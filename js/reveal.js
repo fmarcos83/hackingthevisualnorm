@@ -1590,21 +1590,21 @@
 				// remains crisp. We don't use zoom to scale down since that
 				// can lead to shifts in text layout/line breaks.
 				if( scale > 1 && !isMobileDevice && /chrome/i.test( navigator.userAgent ) && typeof dom.slides.style.zoom !== 'undefined' ) {
-					dom.slides.style.zoom = scale;
-					dom.slides.style.left = '';
-					dom.slides.style.top = '';
-					dom.slides.style.bottom = '';
-					dom.slides.style.right = '';
-					transformSlides( { layout: '' } );
+					//dom.slides.style.zoom = scale;
+					//dom.slides.style.left = '';
+					//dom.slides.style.top = '';
+					//dom.slides.style.bottom = '';
+					//dom.slides.style.right = '';
+					//transformSlides( { layout: '' } );
 				}
 				// Apply scale transform as a fallback
 				else {
-					dom.slides.style.zoom = '';
-					dom.slides.style.left = '50%';
-					dom.slides.style.top = '50%';
-					dom.slides.style.bottom = 'auto';
-					dom.slides.style.right = 'auto';
-					transformSlides( { layout: 'translate(-50%, -50%) scale('+ scale +')' } );
+					//dom.slides.style.zoom = '';
+					//dom.slides.style.left = '50%';
+					//dom.slides.style.top = '50%';
+					//dom.slides.style.bottom = 'auto';
+					//dom.slides.style.right = 'auto';
+					//transformSlides( { layout: 'translate(-50%, -50%) scale('+ scale +')' } );
 				}
 			}
 
